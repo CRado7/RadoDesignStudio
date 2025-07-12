@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #0055ff;
+    --secondary-color: #fff;
+    --accent-color: #f0f0f0;
+    --font-size-base: 16px;
+    --font-size-large: 20px;
+    --font-size-small: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li { 
+    font-family: avenir-next-lt-pro-condensed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    list-style: none;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
