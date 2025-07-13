@@ -1,16 +1,31 @@
+import React from 'react';
+import '../styles/AboutPage.css';
+import Container from '../components/Container';
+import AboutPic from '../assets/About_Pic.png';
+
 export default function AboutPage() {
     return (
-        <div className="about-page">
-        <h1>About Us</h1>
-        <p>
-            Welcome to Rado Design Studio! We are a team of passionate designers and developers dedicated to creating stunning digital experiences. Our mission is to help businesses thrive online through innovative design and cutting-edge technology.
-        </p>
-        <p>
-            With years of experience in the industry, we pride ourselves on delivering high-quality work that exceeds our clients' expectations. Whether it's a website redesign, branding project, or custom software development, we approach each project with creativity and attention to detail.
-        </p>
-        <p>
-            Thank you for considering us for your next project. We look forward to working with you!
-        </p>
-        </div>
+        <Container>
+            <h2 className="title">Behind The Curtin</h2>
+            <section className="about">
+                <img src={AboutPic} alt="About Us" />
+                <div className="text">
+                    <h1>Rado Design Studio</h1>
+                    <h1>was born from</h1>
+                    <h1><span className="blue">movement</span>.</h1>
+                </div>
+            </section>
+            <section className="description">
+                <p>
+                    Across states waves snow and ideas. The name "Rado" came to life when I joined a rugby team after moving from Colorado. It felt right. Short in length bold in sound and full of wild creativity—Rado stuck and so did the spirit behind it.
+                    <br /><br />
+                    I'm Rado—a designer developer and free spirit at heart. Whether I’m riding waves carving lines in fresh powder or slow-cooking something in the kitchen I’m always creating. That energy flows into my work: crafting brands building websites and designing visuals that don’t just look good—they feel alive.
+                    <br /><br />
+                    Rado Design Studio is where creativity meets freedom. No stale templates. No cookie-cutter branding. Just custom work for people and businesses who want to stand out and move with intention.
+                    <br /><br />
+                    Whether you’re looking for a logo that tells your story a website that performs as beautifully as it looks or promo materials that make people stop and pay attention—this is where your next chapter begins.
+                    </p>
+            </section>
+        </Container>
     );
     }
