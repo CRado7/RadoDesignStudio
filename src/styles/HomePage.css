@@ -110,14 +110,6 @@ h4.active::before {
 }
 
 /* CTA Section Styles */
-.cta-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6rem;
-    line-height: .75;
-}
-
 .extra-margin {
     margin-top: 4rem;
 }

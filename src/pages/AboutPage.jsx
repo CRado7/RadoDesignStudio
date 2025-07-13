@@ -26,6 +26,10 @@ export default function AboutPage() {
                     Whether you’re looking for a logo that tells your story a website that performs as beautifully as it looks or promo materials that make people stop and pay attention—this is where your next chapter begins.
                     </p>
             </section>
+            <div className="cta-container">
+                <button>Let's Talk</button>
+            </div>
+            
         </Container>
     );
     }
