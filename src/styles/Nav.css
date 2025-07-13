@@ -7,9 +7,9 @@ nav {
     padding: 2%;
     overflow: hidden;
     justify-content: space-between;
-  }
+}
   
-  nav::before {
+nav::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -22,8 +22,7 @@ nav {
     mask-composite: intersect;
     z-index: -1;
     pointer-events: none;
-  }
-  
+}
 
 nav, .nav-right ul{
     display: flex;
