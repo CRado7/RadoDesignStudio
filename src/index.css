@@ -126,6 +126,14 @@ span.blue {
     min-width: 480px;
 }
 
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    line-height: .75;
+}
+
 button {
     background-color: black;
     color: white;
