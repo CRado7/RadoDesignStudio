@@ -4,12 +4,24 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Dimensions';
+    src: url('./fonts/Dimensions700.ttf') format('truetype'),
+         url('./fonts/Dimensions700.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
 :root {
+    font-family: avenir-next-lt-pro-condensed, sans-serif;
     --blue: #0055ff;
     --secondary-color: #fff;
     --accent-color: #f0f0f0;
-    --font-size-base: 16px;
-    --font-size-large: 20px;
+    --font-size-base: 24px;
+    --font-size-xlarge: clamp(1rem, 14vw, 14vw);
+    --font-size-large: 36px;
+    --font-size-medium: 18px;
     --font-size-small: 14px;
 }
 
@@ -18,7 +30,6 @@ html {
   }
 
 body {
-    font-family: 'Inter', sans-serif;
     line-height: 1.5;
 }
 
@@ -28,10 +39,109 @@ a {
 }
 
 li { 
-    font-family: avenir-next-lt-pro-condensed, sans-serif;
     font-weight: 900;
     font-style: normal;
     list-style: none;
     font-size: 2rem;
     margin: 0 1rem;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: 900;
+    font-style: normal;
+    font-size: clamp(.5rem, 12vw, 12vw);
+    margin: 3rem 0;
+    padding: 0 1rem;
+    color: white;
+    background-color: black;
+}
+
+h2 {
+    font-weight: 900;
+    font-style: normal;
+    font-size: 72px;
+    margin: 2rem 0;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h2.title:after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 15px;
+    background: var(--blue);
+    margin: 0 auto 1rem auto;
+}
+
+h3 {
+    font-family: "Dimensions", sans-serif;
+    font-size: 72px;
+    color: white;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-large);
+    margin: 1rem 0;
+}
+
+span.blue {
+    font-weight: 900;
+    font-style: normal;
+    color: var(--blue);
+}
+
+.large-text {
+    font-size: var(--font-size-large);
+}
+
+.xl-text {
+    font-size: var(--font-size-xlarge);
+    text-transform: uppercase;
+}
+
+.tagline {
+    margin: 5rem 0;
+}
+
+.inner-container {
+    padding: 5% 2%;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-left, .intro-right {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-width: 480px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-family: avenir-next-lt-pro-condensed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    outline: 3px solid var(--blue);
+    outline-offset: 5px;
+    border-radius: 16px;
+    padding: 0.5rem 2rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 11vw;
+        margin: 1rem 0;
+    }
 }
