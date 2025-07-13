@@ -1,6 +1,6 @@
 nav {
     width: 100dvw;
-    height: 60px;
+    height: 80px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -13,7 +13,7 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, .5);
+    background: transparent;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
@@ -68,7 +68,7 @@ a.active {
         background-color: black;
     }
 
-    .nav-right ul {
+    .nav-right.open ul {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -76,6 +76,10 @@ a.active {
         height: 100%;
         right: 0;
         color: white;
+    }
+
+    .nav-right ul {
+        display: none;
     }
 
     .nav-right ul li {
