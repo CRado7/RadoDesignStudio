@@ -7,3 +7,123 @@
     width: 80%;
     margin: auto;
 }
+
+/* Service Section Styles */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.service:nth-child(1) {
+    flex: 1 1 100%;
+}
+
+.service {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 48%;
+    color: white;
+    height: 500px;
+    padding: 2rem;
+    background: transparent;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    color: inherit;
+}
+  
+.service-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.service .blob-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Feature Section Styles */
+.featured-container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+h4 {
+    position: relative;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+h4:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+  
+h4.active {
+    opacity: 1;
+}
+  
+h4.active::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 5px;
+    background: var(--blue);
+    border-radius: 1px;
+}
+  
+.project-preview {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+  
+.project-preview img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Section Styles */
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    line-height: .75;
+}
+
+.extra-margin {
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .hero img {
+        margin: 6rem auto 6rem ;
+    }
+}

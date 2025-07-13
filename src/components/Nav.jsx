@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import Icon from '../assets/RDS_Nav.svg'
+import BlobGradient from '../components/BlobGradient';
 import '../styles/Nav.css';
 
 export default function Nav() {
@@ -67,10 +68,7 @@ export default function Nav() {
                     <span className="close left"></span>
                     <span className="close right"></span>
                     <div className="mobile-menu-gradient">
-                        <div className="blob" />
-                        <div className="blob" />
-                        <div className="blob" />
-                        <div className="blob" />
+                        <BlobGradient />
                     </div>
                 </>
             ) : (
