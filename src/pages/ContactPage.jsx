@@ -12,7 +12,7 @@ export default function ContactPage() {
                     <img src={rdsLogo} alt="Rado Design Studio Logo" className="logo" />
                     <BlobGradient />
                 </div>
-                <h2 className="title">Put Ideas in Motion</h2>
+                <h2 className="title">Put Ideas to Action</h2>
                 
                 <form>
                     <input type="text" id="name" name="name" placeholder="Name (Business or Personal)" required />
@@ -31,8 +31,13 @@ export default function ContactPage() {
             
                     <textarea id="message" name="message" placeholder="Message" required></textarea>
             
-                    <button type="submit">Send</button>
+                    <button type="submit">Submit</button>
                 </form>
+                <h2>or</h2>
+                <p>Call Me Directly:</p>
+                <a href="tel:+17743923956" className="phone-link"> (774) 392-3956</a>
+                <p>Email Me Directly:</p>
+                <a href="mailto:chrisotpher.ferraro34@gmail.com">christopher.ferraro34@gmail.com</a>
             </div>
         </Container>
     );
