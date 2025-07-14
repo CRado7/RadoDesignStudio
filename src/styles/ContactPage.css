@@ -20,6 +20,10 @@
     position: relative;
 }
 
+form button {
+    margin-top: 1rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -33,12 +37,26 @@ input, textarea, select {
     width: 100%;
     max-width: 600px;
     padding: 0.5rem;
-    border: 1px solid var(--blue);
-    border-radius: 4px;
+    font-family:  avenir-next-lt-pro-condensed;
     font-size: var(--font-size-medium);
+    font-style: italic;
+}
+
+textarea {
+    border: 2px solid black;
+}
+
+input, select {
+    border: none;
+    border-bottom: 2px solid black;
 }
 
 textarea {
     height: 150px;
     resize: vertical;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--blue);
 }
