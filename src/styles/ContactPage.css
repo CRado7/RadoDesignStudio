@@ -1,0 +1,44 @@
+.contact-page img, .contact-image {
+    width: clamp(100px, 100px, 600px);
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+.contact-image .blob-background {
+    mask-image: url('src/assets/RDS_Nav.svg');
+    -webkit-mask-image: url('src/assets/RDS_Nav.svg');
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    /* mask-size: 300px 300px;
+    -webkit-mask-size: 300px 300px; */
+  }
+
+.contact-image {
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+input, textarea, select {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.5rem;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    font-size: var(--font-size-medium);
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
