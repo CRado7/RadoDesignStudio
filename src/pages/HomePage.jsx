@@ -36,7 +36,7 @@ export default function HomePage() {
                 <div className="services">
                     {servicesData.map((service) => (
                     <Link
-                        to={`/services/${encodeURIComponent(service.title.toLowerCase())}`}
+                        to={`/services/${encodeURIComponent(service.title.toLowerCase())}-services`}
                         key={service.id}
                         className="service"
                     >

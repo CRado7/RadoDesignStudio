@@ -54,7 +54,7 @@ const servicesData = [
         id: 2,
         title: 'Brand',
         tag: 'Logo + Identity',
-        heading: '<span class="blue">More</span> Than a Logo. Its Your <span class="blue">Identity</span> in <span class="blue">Motion</span>.',
+        heading: '<span class="blue">More</span> Than a Logo. \nIts Your <span class="blue">Identity</span> \nin <span class="blue">Motion</span>.',
         description: 'A good brand doesnt just look cool - it connects. It tells a story. It feels alive. At Rado Design Studio, I create logos and brand identities tjhat do more than "look professional" - they embody who you are and speak directly to the people you are trying to reach.',
         service: 'Brand Services',
         serviceDetails: {
@@ -67,7 +67,7 @@ const servicesData = [
                         { text: 'Custom typography & icon design', checked: true, image: '' },
                         { text: 'Multiple concepts + refinements', checked: true, image: '' },
                         { text: 'Brand-use flexibility (social, print, web', checked: true, image: '' },
-                        { text: 'Delivered in full format suite (SVG, PNG, ect.', checked: true, image: '' }
+                        { text: 'Delivered in full format suite (SVG, PNG, ect).', checked: true, image: '' }
                     ]
                 },
                 {
@@ -104,7 +104,7 @@ const servicesData = [
         id: 3,
         title: 'Promo',
         tag: 'Promo Items + Custom Art',
-        heading: '<span class="blue">Tangible</span> Design. Real-World <span class="blue">Impact</span>.',
+        heading: '<span class="blue">Tangible</span> Design. \nReal-World <span class="blue">Impact</span>.',
         description: 'Your brand doesnt stop at a screen. Rado Design Studio helps your bring it into the real world - with custom promo materials that leave a lasting impression. From apparel to packaging, pens to golfballs, I design pieces that people want to keep (and remember).',
         service: 'Promo Services',
         serviceDetails: {
