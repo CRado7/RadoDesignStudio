@@ -7,7 +7,7 @@ export default function AboutPage() {
     return (
         <Container>
             <h2 className="title">Behind The Curtin</h2>
-            <section className="about">
+            <section className="flex">
                 <img src={AboutPic} alt="About Us" />
                 <div className="text">
                     <h1>Rado Design Studio</h1>

@@ -134,6 +134,13 @@ span.blue {
     line-height: .75;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
 button {
     background-color: black;
     color: white;
