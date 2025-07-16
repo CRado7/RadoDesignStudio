@@ -37,7 +37,8 @@ const servicesData = [
                     points: [
                         { text: 'WordPress', checked: false, image: '' },
                         { text: 'Squarespace', checked: false, image: '' },
-                        { text: 'GoHighLevel', checked: false, image: '' },
+                        { text: 'Webflow', checked: false, image: '' },
+                        { text: 'Shopify', checked: false, image: '' },
                         { text: 'Custom Code', checked: false, image: '' }
                     ]
                 }

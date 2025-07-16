@@ -1,0 +1,40 @@
+.flex.about {
+    align-items: flex-start;
+}
+
+.flex.about p {
+    flex: 3;
+    margin: 55px 1rem;
+    min-width: 450px;
+}
+
+.about p {
+    margin: 55px 0;
+}
+
+.package-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    display: flex;
+    flex: 1;
+    min-width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 0 2%;
+}
+
+.package-card p.package-price {
+    text-align: right;
+    width: 100%;
+}
+
+.packages-section {
+    width: 100%;
+    margin: 0 auto;
+}
