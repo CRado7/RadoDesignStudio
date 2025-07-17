@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/PackagesPage.css';
 import Container from '../components/Container';
+import Card from '../components/Card';
 import packagesData from '../data/packagesData';
 
 export default function PackagesPage() {
@@ -21,18 +22,20 @@ export default function PackagesPage() {
             <section className="packages-section">
                 {/* Brand Packages */}
                 <h2 className="title">{packagesData.brandPackages.heading}</h2>
-                <div className="package-list">
+                <div className="package-list brand">
                 {packagesData.brandPackages.packages.map((pkg, index) => (
-                    <div className="package-card" key={index}>
-                        <h2 className="package-name">{pkg.name}</h2>
-                        <p className="package-content">{pkg.content}</p>
-                        <p className="package-description">{pkg.description}</p>
+                    <Card key={index} {...pkg}>
+                        <div className="card-content">
+                            <h2 className="package-name">{pkg.name}</h2>
+                            <h4 className="package-content">{pkg.content}</h4>
+                            <p className="package-description">{pkg.description}</p>
+                        </div>
                         <p className="package-price">
                             {pkg.startsAt ? 'Starting at ' : ''}${pkg.price}
                             {pkg.astrix && <sup>*</sup>}
                         </p>
-                        {pkg.footnote && <p className="package-footnote">{pkg.footnote}</p>}
-                    </div>
+                        {pkg.footnote && <p className="package-footnote"> <sup>*</sup>{pkg.footnote}</p>}
+                    </Card>
                 ))}
                 </div>
 
@@ -40,17 +43,19 @@ export default function PackagesPage() {
                 <h2 className="title">{packagesData.creativeSupport.heading}</h2>
                 <div className="package-list">
                 {packagesData.creativeSupport.packages.map((plan, index) => (
-                    <div className="package-card" key={index}>
-                        <h2 className="package-name">{plan.name}</h2>
-                        <p className="package-hours">{plan.hours}</p>
-                        <p className="package-ideal">{plan.idealFor}</p>
+                    <Card key={index} {...plan}>
+                        <div className="card-content">
+                            <h2 className="package-name">{plan.name}</h2>
+                            <p className="package-hours">{plan.hours}</p>
+                            <p className="package-ideal">{plan.idealFor}</p>
+                        </div>
                         <p className="package-price">
                             ${plan.price}
                             {plan.hourly && <span className="hourly-rate"> (${plan.hourly}/hr)</span>}
                             {plan.astrix && <sup>*</sup>}
                         </p>
-                        {plan.footnote && <p className="package-footnote">{plan.footnote}</p>}
-                    </div>
+                        {plan.footnote && <p className="package-footnote"><sup>*</sup>{plan.footnote}</p>}
+                    </Card>
                 ))}
                 </div>
             </section>

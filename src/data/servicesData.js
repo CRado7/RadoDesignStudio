@@ -3,7 +3,7 @@ const servicesData = [
         id: 1,
         title: 'Web',
         tag: 'Design + Development',
-        heading: 'Designs in <span class="blue">Motion</span>. \nBrands with <span class="blue">Soul</span>. \nSites that <span class="blue">Work</span>',
+        heading: 'Design in <span class="blue">Motion</span>. \nBrands with <span class="blue">Soul</span>. \nSites that <span class="blue">Work</span>',
         description: 'Every business has a story - your website should tell it beautifully. Whether you need a custom-coded experience or something built on a platform like WordPress, GoHighLevel, or Squarespace, Rado Design Studio brings your vision to life with strategy, style, and soul.',
         service: 'Web Services',
         serviceDetails: {

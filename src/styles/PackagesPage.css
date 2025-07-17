@@ -18,23 +18,9 @@
     flex-wrap: wrap;
 }
 
-.package-card {
+.brand .card-content {
+    height: 275px;
     display: flex;
-    flex: 1;
-    min-width: 450px;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    margin: 10px;
-    padding: 0 2%;
-}
-
-.package-card p.package-price {
-    text-align: right;
-    width: 100%;
-}
-
-.packages-section {
-    width: 100%;
-    margin: 0 auto;
 }
